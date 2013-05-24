@@ -1,0 +1,48 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    ispavailability/logstash (0.3.2)
+      puppetlabs/stdlib (>= 3.0.0)
+    maestrodev/wget (1.1.0)
+    ploperations/bundler (1.0.0)
+    puppetlabs/gcc (0.0.3)
+    puppetlabs/git (0.0.2)
+    puppetlabs/java (0.3.0)
+      puppetlabs/stdlib (>= 0.1.6)
+    puppetlabs/ntp (0.3.0)
+      puppetlabs/stdlib (>= 0.1.6)
+    puppetlabs/ruby (0.0.2)
+    puppetlabs/stdlib (4.1.0)
+    puppetlabs/vcsrepo (0.1.1)
+    thomasvandoren/redis (0.0.9)
+      maestrodev/wget (>= 0.0.0)
+      puppetlabs/gcc (>= 0.0.0)
+
+GIT
+  remote: git@github.com:brucem/garethr-kibana.git
+  ref: master
+  sha: 9405c0d82bf190d07abdc37dddf9c1ca720798e9
+  specs:
+    kibana (0.2.0)
+      ploperations/bundler (>= 0)
+      puppetlabs/git (>= 0)
+      puppetlabs/ruby (>= 0)
+      puppetlabs/stdlib (>= 0)
+      puppetlabs/vcsrepo (>= 0)
+
+GIT
+  remote: git@github.com:brucem/puppet-elasticsearch.git
+  ref: master
+  sha: e9520a4162310505214580bbbe8bf6b521074701
+  specs:
+    elasticsearch (0.1.0)
+      puppetlabs/stdlib (>= 3.0.0)
+
+DEPENDENCIES
+  elasticsearch (>= 0)
+  ispavailability/logstash (>= 0)
+  kibana (>= 0)
+  puppetlabs/java (>= 0)
+  puppetlabs/ntp (>= 0)
+  thomasvandoren/redis (>= 0)
+
