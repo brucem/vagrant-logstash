@@ -5,12 +5,15 @@ mod "puppetlabs/java"
 mod "ispavailability/logstash"
 mod "thomasvandoren/redis"
 
+mod "nginx",
+ :git => "git://github.com/dhutty/puppet-nginx.git"
+
+mod "kibana3",
+ :git => "git@github.com:brucem/puppet-kibana3.git"
+
 mod "elasticsearch",
  :git  => "git@github.com:brucem/puppet-elasticsearch.git"
 
-#mod "garethr/kibana"
 
-mod "kibana",
- :git  => "git@github.com:brucem/garethr-kibana.git"
 
 

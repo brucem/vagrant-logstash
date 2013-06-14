@@ -1,34 +1,28 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
+    dhutty/nginx (0.0.2)
     ispavailability/logstash (0.3.2)
       puppetlabs/stdlib (>= 3.0.0)
-    maestrodev/wget (1.1.0)
-    ploperations/bundler (1.0.0)
+    maestrodev/wget (1.2.0)
     puppetlabs/gcc (0.0.3)
     puppetlabs/git (0.0.2)
     puppetlabs/java (0.3.0)
       puppetlabs/stdlib (>= 0.1.6)
     puppetlabs/ntp (0.3.0)
       puppetlabs/stdlib (>= 0.1.6)
-    puppetlabs/ruby (0.0.2)
     puppetlabs/stdlib (4.1.0)
-    puppetlabs/vcsrepo (0.1.1)
+    puppetlabs/vcsrepo (0.1.2)
     thomasvandoren/redis (0.0.9)
       maestrodev/wget (>= 0.0.0)
       puppetlabs/gcc (>= 0.0.0)
 
 GIT
-  remote: git@github.com:brucem/garethr-kibana.git
+  remote: git://github.com/dhutty/puppet-nginx.git
   ref: master
-  sha: 9405c0d82bf190d07abdc37dddf9c1ca720798e9
+  sha: 595473ae4566b43f0756ec84e32fd4301fe46125
   specs:
-    kibana (0.2.0)
-      ploperations/bundler (>= 0)
-      puppetlabs/git (>= 0)
-      puppetlabs/ruby (>= 0)
-      puppetlabs/stdlib (>= 0)
-      puppetlabs/vcsrepo (>= 0)
+    nginx (0.0.2)
 
 GIT
   remote: git@github.com:brucem/puppet-elasticsearch.git
@@ -38,10 +32,21 @@ GIT
     elasticsearch (0.1.0)
       puppetlabs/stdlib (>= 3.0.0)
 
+GIT
+  remote: git@github.com:brucem/puppet-kibana3.git
+  ref: master
+  sha: 07b773a1a88e7db8160d4c475775a0a7caaf2c1e
+  specs:
+    kibana3 (0.0.1)
+      dhutty/nginx (>= 0)
+      puppetlabs/git (>= 0)
+      puppetlabs/vcsrepo (>= 0)
+
 DEPENDENCIES
   elasticsearch (>= 0)
   ispavailability/logstash (>= 0)
-  kibana (>= 0)
+  kibana3 (>= 0)
+  nginx (>= 0)
   puppetlabs/java (>= 0)
   puppetlabs/ntp (>= 0)
   thomasvandoren/redis (>= 0)

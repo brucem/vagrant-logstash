@@ -30,10 +30,6 @@ node default inherits base {
     ensure => present,
   }
 
-  class{ 'ruby': }
-  class{ 'bundler': 
-    require => Class['ruby'],
-  }
   class{ 'git': }
   class{ 'java': }
 
@@ -129,6 +125,6 @@ node default inherits base {
   }
 
 
-  class {'kibana': }
+  class {'kibana3': }
 
 }
